@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-02-19T01:38:59Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "EEG_2"
+        },
+        "Owner": "Thoma Uchimura <tuchimur@calpoly.edu>",
+        "Size": {
+            "X": 45.72,
+            "Y": 49.53
+        }
+    }
+}

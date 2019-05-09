@@ -1111,6 +1111,22 @@ RECTIFIER
 <pin name="P$5" x="10.16" y="-5.08" length="middle" rot="R90"/>
 <pin name="P$3" x="0" y="-5.08" length="middle" rot="R90"/>
 </symbol>
+<symbol name="LM7915">
+</symbol>
+<symbol name="LM7916">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-6.858" y="0" size="1.27" layer="94">IN</text>
+<text x="2.54" y="0" size="1.27" layer="94">OUT</text>
+<text x="-1.778" y="-3.556" size="1.27" layer="94">GND</text>
+<pin name="P$1" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="P$2" x="-12.7" y="0" length="middle"/>
+<pin name="P$3" x="12.7" y="0" length="middle" rot="R180"/>
+<text x="-10.16" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OPA4188_PACKAGED">
@@ -1506,7 +1522,7 @@ SMD converter and transformer acc. to customer specification</description>
 </deviceset>
 <deviceset name="LM7915">
 <gates>
-<gate name="G$1" symbol="LM7815" x="0" y="0"/>
+<gate name="G$1" symbol="LM7916" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TO-220">

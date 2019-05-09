@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1111,6 +1111,22 @@ RECTIFIER
 <pin name="P$5" x="10.16" y="-5.08" length="middle" rot="R90"/>
 <pin name="P$3" x="0" y="-5.08" length="middle" rot="R90"/>
 </symbol>
+<symbol name="LM7915">
+</symbol>
+<symbol name="LM7916">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-6.858" y="0" size="1.27" layer="94">IN</text>
+<text x="2.54" y="0" size="1.27" layer="94">OUT</text>
+<text x="-1.778" y="-3.556" size="1.27" layer="94">GND</text>
+<pin name="P$1" x="-12.7" y="0" length="middle"/>
+<pin name="P$2" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="P$3" x="12.7" y="0" length="middle" rot="R180"/>
+<text x="-10.16" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OPA4188_PACKAGED">
@@ -1510,11 +1526,6 @@ SMD converter and transformer acc. to customer specification</description>
 </gates>
 <devices>
 <device name="" package="TO-220">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$3"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$1"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
